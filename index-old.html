@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=        </div>
+    </section>
+
+    <!-- À Propos Section -->>
+    <title>CNIGS - Centre National de l'Information Géo-Spatiale</title>
+    <link rel="icon" href="cnigs-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="cnigs-logo.png" alt="Logo CNIGS" class="logo-image">
+                <div class="logo-text-section">
+                    <div class="logo-text">CNIGS</div>
+                    <div class="logo-definition">Centre National de l'Information Géo-Spatiale</div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#apropos" class="nav-link">À propos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#donnees" class="nav-link">Données</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#cartes" class="nav-link">Cartes interactives</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projets" class="nav-link">Projets</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Centre National de l'Information Géo-Spatiale</h1>
+                <p class="hero-subtitle">"Une Institution Nationale de Référence en matière de production, de traitement et de diffusion de l'information Géo-Spatiale! "</p>
+                <div class="hero-buttons">
+                    <a href="#cartes" class="btn btn-primary">Cartes interactives</a>
+                    <a href="#donnees" class="btn btn-secondary">Accéder aux données</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <i class="fas fa-globe-americas"></i>
+            </div>
+        </div>
+        
+        <!-- Quick Access Section -->
+        <div class="quick-access">
+            <div class="container">
+                <h2>Accès rapide</h2>
+                <div class="quick-access-grid">
+                    <div class="quick-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <h3>Cartes thématiques</h3>
+                        <p>Explorez nos cartes interactives</p>
+                        <a href="#cartes" class="quick-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="quick-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h3>Téléchargements</h3>
+                        <p>Accédez à nos données géospatiales</p>
+                        <a href="#donnees" class="quick-link">Télécharger <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="quick-card">
+                        <div class="quick-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>Actualités</h3>
+                        <p>Dernières nouvelles et événements</p>
+                        <a href="#actualites" class="quick-link">Lire <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Section -->
+        <div class="news-section">
+            <div class="container">
+                <h2>Actualités récentes</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="news-date">
+                            <span class="day">05</span>
+                            <span class="month">OCT</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Nouvelle cartographie des risques naturels</h3>
+                            <p>Publication de la carte nationale actualisée des zones à risque d'inondation...</p>
+                            <a href="#" class="news-link">Lire la suite</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-date">
+                            <span class="day">28</span>
+                            <span class="month">SEP</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Mise à jour des données cadastrales</h3>
+                            <p>Les données cadastrales 2025 sont maintenant disponibles en téléchargement...</p>
+                            <a href="#" class="news-link">Lire la suite</a>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="news-date">
+                            <span class="day">15</span>
+                            <span class="month">SEP</span>
+                        </div>
+                        <div class="news-content">
+                            <h3>Formation SIG pour les collectivités</h3>
+                            <p>Lancement du programme de formation aux SIG destiné aux administrations locales...</p>
+                            <a href="#" class="news-link">Lire la suite</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos Section -->
+    <section id="apropos" class="about cnigs-presentation">
+        <div class="container">
+            <div class="presentation-header">
+                <h2>À propos du CNIGS</h2>
+                <p class="presentation-subtitle">Institution publique de référence en information géo-spatiale</p>
+            </div>
+            
+            <div class="presentation-content">
+                <!-- Dénomination -->
+                <div class="presentation-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Dénomination</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Le Centre National de l'Information Géo Spatiale (C.N.I.G.S) est une Institution publique autonome créée par le décret du 27 mars 2006, et placée sous la tutelle du Ministère de la Planification et de la Coopération Externe (MPCE). Le ministre du MPCE assure la Présidence du Conseil d'Administration.</p>
+                        
+                        <div class="document-downloads">
+                            <h4><i class="fas fa-file-pdf"></i> Documents officiels</h4>
+                            <div class="download-links">
+                                <a href="documents/decret-cnigs.pdf" class="download-btn" target="_blank">
+                                    <i class="fas fa-download"></i>
+                                    Décret créant le CNIGS
+                                </a>
+                                <a href="documents/organigramme-cnigs.pdf" class="download-btn" target="_blank">
+                                    <i class="fas fa-sitemap"></i>
+                                    Organigramme
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mission Fondamentale -->
+                <div class="presentation-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Mission Fondamentale</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Le C.N.I.G.S a pour mission de produire et diffuser l'information géographique actualisée et fiable sur tout le territoire national par l'utilisation de technologies modernes appropriées, garantissant la mise à disposition de méthodes, d'outils, de produits et de formation devant supporter la planification des actions de développement durable du pays.</p>
+                    </div>
+                </div>
+
+                <!-- Attributions -->
+                <div class="presentation-card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h3>Multiples Attributions</h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="attribution-intro">Les Attributions du CNIGS sont les suivantes:</p>
+                        <ul class="attributions-list">
+                            <li>
+                                <i class="fas fa-camera"></i>
+                                <span>Collecte, traitement et actualisation périodique de données géo-spatiales de base telles : photographies aériennes, images satellites, données géodésiques et de nivellement de précision, cartographie des délimitations administratives, toponymie;</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-database"></i>
+                                <span>Production et mise à jour des bases de données géo-spatiales de référence;</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-project-diagram"></i>
+                                <span>Réalisation d'applications thématiques en relation avec d'autres institutions nationales et/ou internationales;</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-archive"></i>
+                                <span>Être le dépositaire public de l'information spatiale en Haïti en assurant la codification, l'archivage, l'accès normalisé, la diffusion et la vulgarisation des données et outils disponibles;</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-tools"></i>
+                                <span>Appui en services ou produits spécialisés particulièrement pour des projets d'aménagement et de développement du pays;</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Activités de recherche et développement en information géographique et réalisation de formations dans toutes les disciplines qui font partie de ses champs de compétence;</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Propositions au gouvernement pour la formulation d'une stratégie nationale en matière d'exploitation des outils d'information géographique pour le développement d'Haïti et implémentation de la stratégie;</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-ruler"></i>
+                                <span>Définition des normes et standards au niveau du référentiel cartographique utilisé, des méthodes de production des données ainsi que des modalités de leurs échanges et diffusion;</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Section -->
+    <section id="donnees" class="data-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Téléchargement de Données</h2>
+                <p>Accédez à notre catalogue complet de jeux de données géospatiales</p>
+            </div>
+            
+            <div class="download-info">
+                <div class="formats-available">
+                    <h3><i class="fas fa-file-download"></i> Formats disponibles</h3>
+                    <div class="format-tags">
+                        <span class="format-tag shapefile"><i class="fas fa-layer-group"></i> Shapefile (.shp)</span>
+                        <span class="format-tag geojson"><i class="fas fa-code"></i> GeoJSON (.geojson)</span>
+                        <span class="format-tag csv"><i class="fas fa-table"></i> CSV (.csv)</span>
+                        <span class="format-tag kml"><i class="fas fa-map-pin"></i> KML (.kml)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-categories">
+                <div class="data-card">
+                    <div class="data-header">
+                        <div class="data-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <h3>Données Topographiques</h3>
+                    </div>
+                    <p>Cartes topographiques, modèles numériques de terrain, réseaux hydrographiques, courbes de niveau</p>
+                    <div class="data-stats">
+                        <span class="stat"><i class="fas fa-database"></i> 245 jeux de données</span>
+                        <span class="stat"><i class="fas fa-calendar"></i> Mis à jour: Oct 2025</span>
+                    </div>
+                    <div class="data-actions">
+                        <a href="#" class="btn-download" data-category="topographic">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                        <a href="#" class="btn-preview">
+                            <i class="fas fa-eye"></i> Aperçu
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="data-card">
+                    <div class="data-header">
+                        <div class="data-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Données Cadastrales</h3>
+                    </div>
+                    <p>Plans cadastraux, parcellaires, limites administratives, propriétés foncières</p>
+                    <div class="data-stats">
+                        <span class="stat"><i class="fas fa-database"></i> 189 jeux de données</span>
+                        <span class="stat"><i class="fas fa-calendar"></i> Mis à jour: Sep 2025</span>
+                    </div>
+                    <div class="data-actions">
+                        <a href="#" class="btn-download" data-category="cadastral">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                        <a href="#" class="btn-preview">
+                            <i class="fas fa-eye"></i> Aperçu
+                        </a>
+                    </div>
+                </div>
+
+                <div class="data-card">
+                    <div class="data-header">
+                        <div class="data-icon">
+                            <i class="fas fa-satellite"></i>
+                        </div>
+                        <h3>Images Satellitaires</h3>
+                    </div>
+                    <p>Images haute résolution, analyses multi-temporelles, classifications thématiques, indices de végétation</p>
+                    <div class="data-stats">
+                        <span class="stat"><i class="fas fa-database"></i> 156 jeux de données</span>
+                        <span class="stat"><i class="fas fa-calendar"></i> Mis à jour: Oct 2025</span>
+                    </div>
+                    <div class="data-actions">
+                        <a href="#" class="btn-download" data-category="satellite">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                        <a href="#" class="btn-preview">
+                            <i class="fas fa-eye"></i> Aperçu
+                        </a>
+                    </div>
+                </div>
+
+                <div class="data-card">
+                    <div class="data-header">
+                        <div class="data-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Données Démographiques</h3>
+                    </div>
+                    <p>Statistiques spatiales, données de recensement, analyses territoriales, densité de population</p>
+                    <div class="data-stats">
+                        <span class="stat"><i class="fas fa-database"></i> 78 jeux de données</span>
+                        <span class="stat"><i class="fas fa-calendar"></i> Mis à jour: Août 2025</span>
+                    </div>
+                    <div class="data-actions">
+                        <a href="#" class="btn-download" data-category="demographic">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                        <a href="#" class="btn-preview">
+                            <i class="fas fa-eye"></i> Aperçu
+                        </a>
+                    </div>
+                </div>
+
+                <div class="data-card">
+                    <div class="data-header">
+                        <div class="data-icon">
+                            <i class="fas fa-road"></i>
+                        </div>
+                        <h3>Infrastructures</h3>
+                    </div>
+                    <p>Réseaux routiers, infrastructures publiques, équipements, réseaux de transport</p>
+                    <div class="data-stats">
+                        <span class="stat"><i class="fas fa-database"></i> 134 jeux de données</span>
+                        <span class="stat"><i class="fas fa-calendar"></i> Mis à jour: Sep 2025</span>
+                    </div>
+                    <div class="data-actions">
+                        <a href="#" class="btn-download" data-category="infrastructure">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                        <a href="#" class="btn-preview">
+                            <i class="fas fa-eye"></i> Aperçu
+                        </a>
+                    </div>
+                </div>
+
+                <div class="data-card">
+                    <div class="data-header">
+                        <div class="data-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Environnement</h3>
+                    </div>
+                    <p>Couverture végétale, zones protégées, qualité de l'air, ressources naturelles</p>
+                    <div class="data-stats">
+                        <span class="stat"><i class="fas fa-database"></i> 92 jeux de données</span>
+                        <span class="stat"><i class="fas fa-calendar"></i> Mis à jour: Oct 2025</span>
+                    </div>
+                    <div class="data-actions">
+                        <a href="#" class="btn-download" data-category="environment">
+                            <i class="fas fa-download"></i> Télécharger
+                        </a>
+                        <a href="#" class="btn-preview">
+                            <i class="fas fa-eye"></i> Aperçu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Maps Section -->
+    <section id="cartes" class="maps-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cartes Interactives</h2>
+                <p>Explorez nos cartes thématiques interactives</p>
+            </div>
+            
+            <div class="map-interface">
+                <div class="map-controls">
+                    <div class="map-categories">
+                        <button class="map-btn active" data-map="risques">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            Risques Naturels
+                        </button>
+                        <button class="map-btn" data-map="infrastructures">
+                            <i class="fas fa-building"></i>
+                            Infrastructures
+                        </button>
+                        <button class="map-btn" data-map="environnement">
+                            <i class="fas fa-tree"></i>
+                            Environnement
+                        </button>
+                        <button class="map-btn" data-map="population">
+                            <i class="fas fa-users"></i>
+                            Population
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <div id="interactive-map" class="map-placeholder">
+                        <div class="map-placeholder-content">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3>Carte Interactive</h3>
+                            <p>Intégration avec OpenStreetMap</p>
+                            <p class="map-description">
+                                Sélectionnez une catégorie ci-dessus pour afficher la carte correspondante.
+                                Les cartes utilisent OpenStreetMap et Leaflet pour une expérience interactive complète.
+                            </p>
+                            <div class="map-features">
+                                <span class="feature-tag"><i class="fas fa-search-plus"></i> Zoom</span>
+                                <span class="feature-tag"><i class="fas fa-layer-group"></i> Couches</span>
+                                <span class="feature-tag"><i class="fas fa-info-circle"></i> Info-bulles</span>
+                                <span class="feature-tag"><i class="fas fa-download"></i> Export</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-legend">
+                    <h4>Cartes disponibles :</h4>
+                    <div class="legend-items">
+                        <div class="legend-item">
+                            <div class="legend-color risk"></div>
+                            <span>Zones à risque d'inondation</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color seismic"></div>
+                            <span>Zones sismiques</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color infrastructure"></div>
+                            <span>Infrastructures critiques</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color environment"></div>
+                            <span>Aires protégées</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-cards">
+                <div class="map-card">
+                    <div class="map-card-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Risques d'Inondation</h3>
+                    <p>Cartographie des zones inondables et des niveaux de risque par bassin versant.</p>
+                    <div class="map-card-stats">
+                        <span>Dernière mise à jour: Oct 2025</span>
+                    </div>
+                </div>
+                
+                <div class="map-card">
+                    <div class="map-card-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Risques Sismiques</h3>
+                    <p>Zonage sismique national et probabilité d'occurrence des séismes.</p>
+                    <div class="map-card-stats">
+                        <span>Dernière mise à jour: Sep 2025</span>
+                    </div>
+                </div>
+                
+                <div class="map-card">
+                    <div class="map-card-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h3>Infrastructures Critiques</h3>
+                    <p>Localisation des infrastructures essentielles : hôpitaux, écoles, routes principales.</p>
+                    <div class="map-card-stats">
+                        <span>Dernière mise à jour: Oct 2025</span>
+                    </div>
+                </div>
+                
+                <div class="map-card">
+                    <div class="map-card-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Couverture Forestière</h3>
+                    <p>Évolution de la couverture forestière et zones de déforestation.</p>
+                    <div class="map-card-stats">
+                        <span>Dernière mise à jour: Août 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Projets</h2>
+                <p>Découvrez nos projets en cours et réalisés, ainsi que nos partenariats</p>
+            </div>
+            
+            <div class="projects-tabs">
+                <button class="tab-btn active" data-tab="en-cours">Projets en cours</button>
+                <button class="tab-btn" data-tab="realises">Projets réalisés</button>
+                <button class="tab-btn" data-tab="partenaires">Partenaires</button>
+            </div>
+
+            <div class="tab-content active" id="en-cours">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Cartographie Urbaine 3D</h3>
+                            <p>Développement de modèles 3D des principales villes pour la planification urbaine et la gestion des risques.</p>
+                            <div class="project-details">
+                                <div class="project-budget">Budget: 2.5M €</div>
+                                <div class="project-timeline">2024-2026</div>
+                            </div>
+                            <div class="project-status ongoing">En cours - 65%</div>
+                            <div class="project-partners">
+                                <span>Partenaires: Union Européenne, Ministère de l'Urbanisme</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Monitoring Environnemental par Satellite</h3>
+                            <p>Surveillance en temps réel de la déforestation et des changements d'usage des sols via imagerie satellitaire.</p>
+                            <div class="project-details">
+                                <div class="project-budget">Budget: 1.8M €</div>
+                                <div class="project-timeline">2025-2027</div>
+                            </div>
+                            <div class="project-status ongoing">En cours - 30%</div>
+                            <div class="project-partners">
+                                <span>Partenaires: Agence Spatiale Européenne, WWF</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Système National de Gestion de l'Eau</h3>
+                            <p>Développement d'un système intégré de monitoring et de gestion des ressources hydriques nationales.</p>
+                            <div class="project-details">
+                                <div class="project-budget">Budget: 3.2M €</div>
+                                <div class="project-timeline">2025-2028</div>
+                            </div>
+                            <div class="project-status planning">Planification - 10%</div>
+                            <div class="project-partners">
+                                <span>Partenaires: Banque Mondiale, Ministère de l'Environnement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="realises">
+                <div class="projects-grid">
+                    <div class="project-card completed">
+                        <div class="project-image">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Atlas National Numérique</h3>
+                            <p>Création de l'atlas national numérique interactif avec plus de 500 cartes thématiques.</p>
+                            <div class="project-details">
+                                <div class="project-budget">Budget: 1.5M €</div>
+                                <div class="project-timeline">2020-2023</div>
+                            </div>
+                            <div class="project-status completed">Terminé</div>
+                            <div class="project-partners">
+                                <span>Partenaires: Institut National de Statistiques</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card completed">
+                        <div class="project-image">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Modernisation du Cadastre National</h3>
+                            <p>Numérisation complète du cadastre national et mise en place d'un système de gestion moderne.</p>
+                            <div class="project-details">
+                                <div class="project-budget">Budget: 4.2M €</div>
+                                <div class="project-timeline">2018-2022</div>
+                            </div>
+                            <div class="project-status completed">Terminé</div>
+                            <div class="project-partners">
+                                <span>Partenaires: Banque Africaine de Développement</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card completed">
+                        <div class="project-image">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Programme de Formation SIG</h3>
+                            <p>Formation de 500+ professionnels aux technologies SIG dans les administrations publiques.</p>
+                            <div class="project-details">
+                                <div class="project-budget">Budget: 800K €</div>
+                                <div class="project-timeline">2021-2024</div>
+                            </div>
+                            <div class="project-status completed">Terminé</div>
+                            <div class="project-partners">
+                                <span>Partenaires: PNUD, Universités nationales</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="partenaires">
+                <div class="partners-section">
+                    <div class="partners-category">
+                        <h3><i class="fas fa-globe-europe"></i> Partenaires Internationaux</h3>
+                        <div class="partners-grid">
+                            <div class="partner-card">
+                                <div class="partner-logo">
+                                    <i class="fas fa-flag"></i>
+                                </div>
+                                <h4>Union Européenne</h4>
+                                <p>Financement de projets de développement géospatial</p>
+                            </div>
+                            <div class="partner-card">
+                                <div class="partner-logo">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h4>Agence Spatiale Européenne</h4>
+                                <p>Accès aux données satellitaires Copernicus</p>
+                            </div>
+                            <div class="partner-card">
+                                <div class="partner-logo">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <h4>Banque Mondiale</h4>
+                                <p>Financement et expertise technique</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="partners-category">
+                        <h3><i class="fas fa-building"></i> Partenaires Nationaux</h3>
+                        <div class="partners-grid">
+                            <div class="partner-card">
+                                <div class="partner-logo">
+                                    <i class="fas fa-landmark"></i>
+                                </div>
+                                <h4>Ministère de l'Environnement</h4>
+                                <p>Collaboration sur les projets environnementaux</p>
+                            </div>
+                            <div class="partner-card">
+                                <div class="partner-logo">
+                                    <i class="fas fa-chart-bar"></i>
+                                </div>
+                                <h4>Institut National de Statistiques</h4>
+                                <p>Données démographiques et socio-économiques</p>
+                            </div>
+                            <div class="partner-card">
+                                <div class="partner-logo">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h4>Universités Nationales</h4>
+                                <p>Recherche et formation en géomatique</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contactez-nous</h2>
+                <p>N'hésitez pas à nous contacter pour vos besoins en information géo-spatiale</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Adresse</h3>
+                            <p>123 Avenue de la Géomatique<br>Capitale, Pays<br>Code Postal</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Téléphone</h3>
+                            <p>+XXX XX XX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>contact@cnigs.gov</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Horaires</h3>
+                            <p>Lun - Ven: 8h00 - 17h00<br>Sam: 8h00 - 12h00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Formulaire de Contact</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="organization">Organisation</label>
+                                <input type="text" id="organization" name="organization">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="donnees">Demande de données</option>
+                                <option value="formation">Formation</option>
+                                <option value="partenariat">Partenariat</option>
+                                <option value="technique">Support technique</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre demande en détail..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="location-section">
+                <div class="location-header">
+                    <h3><i class="fas fa-map-marker-alt"></i> Notre Localisation</h3>
+                    <p>Retrouvez-nous au siège du CNIGS</p>
+                </div>
+                <div class="location-map">
+                    <div id="location-map" class="map-placeholder">
+                        <div class="map-placeholder-content">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h4>Carte de Localisation</h4>
+                            <p>123 Avenue de la Géomatique<br>Capitale, Pays</p>
+                            <div class="map-instructions">
+                                <p>Cliquez pour ouvrir dans Google Maps</p>
+                                <a href="https://maps.google.com" target="_blank" class="btn btn-outline">
+                                    <i class="fas fa-external-link-alt"></i> Ouvrir dans Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="cnigs-logo.png" alt="Logo CNIGS" class="footer-logo-image">
+                        <div class="footer-logo-text-section">
+                            <span class="footer-logo-text">CNIGS</span>
+                            <span class="footer-logo-definition">Centre National de l'Information Géo-Spatiale</span>
+                        </div>
+                    </div>
+                    <p>Centre National de l'Information Géo-Spatiale - Votre référence en matière d'information géographique.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Cartographie</a></li>
+                        <li><a href="#">Télédétection</a></li>
+                        <li><a href="#">Bases de Données</a></li>
+                        <li><a href="#">Formation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Ressources</h3>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Standards</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>À propos</h3>
+                    <ul>
+                        <li><a href="#">Notre mission</a></li>
+                        <li><a href="#">L'équipe</a></li>
+                        <li><a href="#">Carrières</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CNIGS - Centre National de l'Information Géo-Spatiale. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

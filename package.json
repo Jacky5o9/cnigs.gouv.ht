@@ -1,0 +1,25 @@
+{
+  "name": "cnigs-website",
+  "version": "1.0.0",
+  "description": "Site web du Centre National de l'Information Géo-Spatiale",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "php -S localhost:8000",
+    "dev": "live-server --port=8000"
+  },
+  "keywords": [
+    "cnigs",
+    "geospatial",
+    "cartographie",
+    "sig",
+    "geographic",
+    "information",
+    "government"
+  ],
+  "author": "CNIGS",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
