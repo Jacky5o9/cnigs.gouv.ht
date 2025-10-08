@@ -111,9 +111,7 @@ Pour personnaliser davantage le site :
 4. Configurez votre serveur web avec HTTPS
 
 ## 📄 Licence
-
-Template gratuit pour usage gouvernemental et institutionnel.
-
+Tous droits réservés.
 ---
 
 **Développé pour le Centre National de l'Information Géo-Spatiale**
