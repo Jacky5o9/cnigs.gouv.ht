@@ -2161,3 +2161,344 @@ body {
         justify-content: center;
     }
 }
+
+/* Hero Section avec Slider en arrière-plan */
+.hero {
+    margin-top: 115px;
+    position: relative;
+    overflow: hidden;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+/* Slider en arrière-plan du Hero */
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-slider-track {
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: 600%;
+    height: 100%;
+}
+
+.hero-slide {
+    min-width: 16.666667%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Slide avec image de fond */
+.hero-slide.slide-image-bg {
+    background-image: url('images/cnigs-building.jpg');
+}
+
+/* Remplacer les slides avec couleurs dégradées par vos images */
+.hero-slide.slide-gradient-1 {
+    background-image: url('images/cnigs-building1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-slide.slide-gradient-2 {
+    background-image: url('images/cnigs-building2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-slide.slide-gradient-3 {
+    background-image: url('images/cnigs-building3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-slide.slide-gradient-4 {
+    background-image: url('images/cnigs-building4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-slide.slide-gradient-5 {
+    background-image: url('images/cnigs-building5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Overlay pour tous les slides - ajusté pour les images */
+.hero-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg, 
+        rgba(240, 253, 244, 0.75), 
+        rgba(220, 252, 231, 0.65), 
+        rgba(240, 249, 255, 0.75)
+    );
+    z-index: 2;
+}
+
+/* Ajout de contrôles du slider Hero si pas encore présents */
+.hero-slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 4;
+}
+
+.hero-slider-btn {
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.9);
+    border: 2px solid var(--cnigs-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: all;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.hero-slider-btn:hover {
+    background: var(--cnigs-green);
+    border-color: var(--cnigs-green);
+    transform: scale(1.1);
+}
+
+.hero-slider-btn i {
+    color: var(--cnigs-green);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.hero-slider-btn:hover i {
+    color: white;
+}
+
+/* Indicateurs du slider Hero */
+.hero-slider-indicators {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 4;
+}
+
+.hero-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid var(--cnigs-green);
+}
+
+.hero-indicator.active {
+    background: var(--cnigs-green);
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+}
+
+.hero-indicator:hover {
+    background: rgba(255,255,255,0.9);
+    transform: scale(1.1);
+}
+
+/* Suppression de l'ancienne section slider */
+.slider-section {
+    display: none;
+}
+
+/* Responsive pour les contrôles du Hero slider */
+@media (max-width: 768px) {
+    .hero-slider-controls {
+        padding: 0 1rem;
+    }
+    
+    .hero-slider-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .hero-slider-indicators {
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-slider-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .hero-slider-btn i {
+        font-size: 1rem;
+    }
+}
+
+/* Contenu du Hero par-dessus le slider */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--cnigs-green-dark);
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+    text-align: center;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--cnigs-gray);
+    margin-bottom: 30px;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+    text-align: center;
+    max-width: 800px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Suppression du globe */
+.hero-image {
+    display: none;
+}
+
+/* Responsive pour Hero sans globe */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 500px;
+        margin-top: 85px;
+    }
+    
+    .hero-content {
+        padding: 60px 20px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-slider-controls {
+        padding: 0 1rem;
+    }
+    
+    .hero-slider-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .hero-slider-indicators {
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 450px;
+    }
+    
+    .hero-content {
+        padding: 40px 20px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+    
+    .hero-slider-btn {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .hero-slider-btn i {
+        font-size: 1rem;
+    }
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #1e293b;
+    margin-bottom: 30px;
+    font-style: italic;
+    font-weight: 500;
+    text-shadow: 
+        2px 2px 4px rgba(255, 255, 255, 0.9),
+        1px 1px 2px rgba(255, 255, 255, 0.8);
+    text-align: center;
+    max-width: 800px;
+}

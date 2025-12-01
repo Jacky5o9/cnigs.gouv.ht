@@ -306,3 +306,173 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('CNIGS - Site web chargé avec succès! 🌍');
 });
+
+// CNIGS - Hero Slider Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('CNIGS - Site web chargé avec succès! 🌍');
+    
+    // Initialiser le slider du Hero
+    initHeroSlider();
+    
+    // Vos autres initialisations...
+});
+
+// ===== HERO SLIDER MANAGEMENT =====
+function initHeroSlider() {
+    const sliderTrack = document.getElementById('heroSliderTrack');
+    const prevBtn = document.getElementById('heroPrevBtn');
+    const nextBtn = document.getElementById('heroNextBtn');
+    const indicators = document.querySelectorAll('.hero-indicator');
+    const sliderContainer = document.querySelector('.hero-slider-container');
+    
+    if (!sliderTrack) {
+        console.log('Hero slider non trouvé dans le DOM');
+        return;
+    }
+
+    console.log('Hero slider trouvé, initialisation en cours...');
+
+    let currentSlide = 0;
+    const totalSlides = 6;
+    let sliderInterval;
+    let isSliderPaused = false;
+
+    function moveToSlide(index) {
+        currentSlide = index;
+        const translateX = -(index * 16.666667); // 100% / 6 slides
+        sliderTrack.style.transform = `translateX(${translateX}%)`;
+        
+        // Mettre à jour les indicateurs
+        indicators.forEach((ind, i) => {
+            ind.classList.toggle('active', i === index);
+        });
+        
+        // Mettre à jour la classe active du slide
+        const slides = document.querySelectorAll('.hero-slide');
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        moveToSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        moveToSlide(currentSlide);
+    }
+
+    // Event listeners pour les boutons
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoPlay();
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoPlay();
+        });
+    }
+
+    // Event listeners pour les indicateurs
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            moveToSlide(index);
+            resetAutoPlay();
+        });
+    });
+
+    // Auto-play
+    function startAutoPlay() {
+        if (!isSliderPaused) {
+            sliderInterval = setInterval(() => {
+                nextSlide();
+            }, 6000); // Change toutes les 6 secondes
+        }
+    }
+
+    function stopAutoPlay() {
+        clearInterval(sliderInterval);
+    }
+
+    function resetAutoPlay() {
+        stopAutoPlay();
+        setTimeout(startAutoPlay, 1500); // Redémarre après 1.5 seconde
+    }
+
+    // Pause au survol du Hero
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+        heroSection.addEventListener('mouseenter', () => {
+            isSliderPaused = true;
+            stopAutoPlay();
+        });
+        
+        heroSection.addEventListener('mouseleave', () => {
+            isSliderPaused = false;
+            startAutoPlay();
+        });
+    }
+
+    // Support tactile pour mobile
+    let startX = 0;
+    let endX = 0;
+
+    if (sliderContainer) {
+        sliderContainer.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            stopAutoPlay();
+        });
+
+        sliderContainer.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            const threshold = 50;
+            
+            if (startX - endX > threshold) {
+                // Swipe vers la gauche - slide suivant
+                nextSlide();
+            } else if (endX - startX > threshold) {
+                // Swipe vers la droite - slide précédent
+                prevSlide();
+            }
+            
+            resetAutoPlay();
+        });
+    }
+
+    // Initialisation
+    moveToSlide(0);
+    startAutoPlay();
+    
+    console.log('Hero slider initialisé avec succès');
+}
+
+// Navigation au clavier pour le Hero slider
+document.addEventListener('keydown', (e) => {
+    const heroSection = document.querySelector('.hero');
+    if (heroSection && isElementInViewport(heroSection)) {
+        if (e.key === 'ArrowLeft') {
+            document.getElementById('heroPrevBtn')?.click();
+        } else if (e.key === 'ArrowRight') {
+            document.getElementById('heroNextBtn')?.click();
+        }
+    }
+});
+
+// Utilitaire pour vérifier si un élément est visible
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// ... le reste de votre code JavaScript existant ...

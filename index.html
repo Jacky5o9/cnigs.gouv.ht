@@ -48,28 +48,75 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+        <!-- Hero Section -->
     <section id="accueil" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Centre National de l'Information Géo-Spatiale</h1>
-                <p class="hero-subtitle">"Une Institution Nationale de Référence en matière de production, de traitement et de diffusion de l'information Géo-Spatiale!"</p>
-                <div class="hero-buttons">
-                    <a href="#apropos" class="btn btn-primary">
-                        <i class="fas fa-info-circle"></i>
-                        Découvrir le CNIGS
-                    </a>
-                    <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i>
-                        Nous contacter
-                    </a>
+        <!-- Slider en arrière-plan -->
+        <div class="hero-slider">
+            <div class="hero-slider-container">
+                <div class="hero-slider-track" id="heroSliderTrack">
+                    <!-- Slide 1: Photo du bâtiment -->
+                    <div class="hero-slide slide-image-bg active"></div>
+                    
+                    <!-- Slide 2: Technologies -->
+                    <div class="hero-slide slide-gradient-1"></div>
+                    
+                    <!-- Slide 3: Données -->
+                    <div class="hero-slide slide-gradient-2"></div>
+                    
+                    <!-- Slide 4: Formation -->
+                    <div class="hero-slide slide-gradient-3"></div>
+                    
+                    <!-- Slide 5: Partenariats -->
+                    <div class="hero-slide slide-gradient-4"></div>
+                    
+                    <!-- Slide 6: Gestion des risques -->
+                    <div class="hero-slide slide-gradient-5"></div>
+                </div>
+                
+                <!-- Contrôles du slider -->
+                <div class="hero-slider-controls">
+                    <button class="hero-slider-btn prev-btn" id="heroPrevBtn" aria-label="Slide précédent">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="hero-slider-btn next-btn" id="heroNextBtn" aria-label="Slide suivant">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <!-- Indicateurs -->
+                <div class="hero-slider-indicators">
+                    <span class="hero-indicator active" data-slide="0"></span>
+                    <span class="hero-indicator" data-slide="1"></span>
+                    <span class="hero-indicator" data-slide="2"></span>
+                    <span class="hero-indicator" data-slide="3"></span>
+                    <span class="hero-indicator" data-slide="4"></span>
+                    <span class="hero-indicator" data-slide="5"></span>
                 </div>
             </div>
+        </div>
+        
+        <!-- Contenu du Hero par-dessus -->
+        <div class="hero-content">
+            <h1 class="hero-title">Centre National de l'Information Géo-Spatiale</h1>
+            <p class="hero-subtitle">"Une Institution Nationale de Référence en matière de production, de traitement et de diffusion de l'information Géo-Spatiale!"</p>
+            <div class="hero-buttons">
+                <a href="#apropos" class="btn btn-primary">
+                    <i class="fas fa-info-circle"></i>
+                    Découvrir le CNIGS
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Nous contacter
+                </a>
+            </div>
+        </div>
             <div class="hero-image">
                 <i class="fas fa-globe-americas"></i>
             </div>
         </div>
     </section>
+    
+    
 
     <!-- Section Accueil Étendue -->
     <section class="accueil-extended">
