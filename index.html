@@ -708,20 +708,61 @@
                     <p>Limites territoriales et divisions politiques d'Haïti</p>
                 </div>
                 <div class="category-datasets">
-                    <div class="dataset-item">
+                    <div class="dataset-item" 
+                         data-id="1" 
+                         data-title="Limites Administratives"
+                         data-description="Limites administratives et politiques du Pays avec 4 niveaux hiérarchiques imbriqués: Département, Arrondissement, Commune et Section Communale"
+                         data-layers='[
+                            {"id": "1.1", "name": "Limite Pays", "description": "L&#39;intersection entre la cote du pays et la mer. Cette limite englobe aussi les petites et les grandes îles du pays dont la Navase", "type": "Polygone"},
+                            {"id": "1.2", "name": "Limite Département", "description": "Espace territorial représentant la plus grande division territoriale regroupant les Arrondissements, les Communes et les Sections Communales.", "type": "Polygone"},
+                            {"id": "1.3", "name": "Limite Arrondissement", "description": "Espace territorial regroupant les communes et les sections communales à l&#39;intérieur d&#39;un même département", "type": "Polygone"},
+                            {"id": "1.4", "name": "Limite Commune", "description": "Espace territorial regroupant les sections communales à l&#39;intérieur d&#39;un même Arrondissement. La commune contient aussi une ville et certaines fois des quartiers", "type": "Polygone"},
+                            {"id": "1.5", "name": "Limite Section Communale", "description": "Espace territorial qui définit la plus petite unité administrative du pays, il comprend des habitations, des localités, des villages, des Lakous, etc.", "type": "Polygone"}
+                         ]'>
+                         
                         <h4><i class="fas fa-border-style"></i> Limites Administratives</h4>
                         <p>4 niveaux hiérarchiques : Département, Arrondissement, Commune, Section Communale</p>
                         <span class="data-type">Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="2" 
+                         data-title="Chef-Lieu"
+                         data-description="Localise les chefs lieux de la capitale, des départements, des arrondissement et des communes"
+                         data-layers='[
+                            {"id": "2.1", "name": "Capitale", "description": "Localise la première ville, la ville principale du pays ou siège le gouvernement", "type": "Point"},
+                            {"id": "2.2", "name": "Chef-Lieu Département", "description": "Localise la ville principale, la plus importante du Département", "type": "Point"},
+                            {"id": "2.3", "name": "Chef-Lieu D&#39;arrondissement", "description": "Localise la ville principale, la plus importante de l&#39;arrondissement", "type": "Point"},
+                            {"id": "2.4", "name": "Chef-Lieu de Commune", "description": "Localise la ville principale, la plus importante d&#39;une commune", "type": "Point"}
+                         ]'>
                         <h4><i class="fas fa-landmark"></i> Chef-Lieu</h4>
                         <p>Localisation de la capitale et des chefs-lieux territoriaux</p>
                         <span class="data-type">Point</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="3" 
+                         data-title="Limite Frontalière"
+                         data-description="Délimite la frontière administrative et politique entre Haiti et la République Dominicaine"
+                         data-layers='[
+                            {"id": "3.1", "name": "Limite frontière", "description": "Ligne définie, marquant la séparation entre la République d&#39;Haiti et la République Dominicaine relevant de juridictions différentes", "type": "Polygone"},
+                            {"id": "3.2", "name": "Bornes frontalières", "description": "Bornes de béton matérialisées et installées le long de la frontière terrestre entre la République d&#39;Haiti et la République Dominicaine selon des résolutions officielles entre les deux pays", "type": "Point"}
+                         ]'>
                         <h4><i class="fas fa-flag"></i> Limite Frontalière</h4>
                         <p>Frontière administrative entre Haïti et la République Dominicaine</p>
                         <span class="data-type">Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -736,35 +777,124 @@
                     <p>Infrastructures fondamentales et réseaux du territoire</p>
                 </div>
                 <div class="category-datasets">
-                    <div class="dataset-item">
+                    <div class="dataset-item" 
+                         data-id="4" 
+                         data-title="Plan d'Eau"
+                         data-description="Décrit la localisation des lacs, étangs marais et lagons"
+                         data-layers='[
+                            {"id": "4.1", "name": "Lac", "description": "Décrit une étendue d&#39;eau stagnante plus ou moins profonde, entourée de terre de tous les cotés", "type": "Polygone"},
+                            {"id": "4.2", "name": "Etang", "description": "Décrit une étendue d&#39;eau stagnante naturelle ou artificielle, généralement de dimensions et de profondeur peu profond qu&#39;un lac", "type": "Polygone"},
+                            {"id": "4.3", "name": "Marais-Marécage", "description": "Milieu saturé parfois recouvert d&#39;eau, supportant une végétation qui peut inclure des arbres.", "type": "Polygone"},
+                            {"id": "4.4", "name": "Lagon", "description": "Etendue d&#39;eau marine fermée par un récif corallien. Le Lagon peut être de forme soit circulaire ou linéaire.", "type": "Polygone"},
+                            {"id": "4.5", "name": "Lagune", "description": "Etendue d&#39;eau retenue derrière un cordon littoral le plus souvent sableux ou vaseux.", "type": "Polygone"}
+                         ]'>
                         <h4><i class="fas fa-water"></i> Plan d'Eau</h4>
                         <p>Lacs, étangs, marais, lagons et lagunes</p>
                         <span class="data-type">Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="5" 
+                         data-title="Réseau Routier"
+                         data-description="Décrit le réseau routier du pays selon la catégorie (classe) définie par la législation"
+                         data-layers='[
+                            {"id": "5.1", "name": "Route Nationale (RN)", "description": "Routes principales du réseau national", "type": "Ligne"},
+                            {"id": "5.2", "name": "Route Départementale (RD)", "description": "Routes reliant les départements", "type": "Ligne"},
+                            {"id": "5.3", "name": "Route Communale (RC)", "description": "Routes communales locales", "type": "Ligne"},
+                            {"id": "5.4", "name": "Route Urbaine (RU)", "description": "Routes dans les zones urbaines", "type": "Ligne"},
+                            {"id": "5.5", "name": "Route Rurale (RR)", "description": "Routes en zone rurale", "type": "Ligne"},
+                            {"id": "5.6", "name": "Autres Routes (RA)", "description": "Sentier, Chemin, Piste, piste agricole", "type": "Ligne"}
+                         ]'>
                         <h4><i class="fas fa-road"></i> Réseau Routier</h4>
                         <p>Routes nationales, départementales, communales et urbaines</p>
                         <span class="data-type">Ligne</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="6" 
+                         data-title="Réseau Hydrographique"
+                         data-description="Décrit le réseau hydrographique du pays selon la catégorie (classe)"
+                         data-layers='[
+                            {"id": "6.1", "name": "Rivière Principale", "description": "Couche retraçant les rivières principales du pays (Fleuve, rivières temporaires ou permanentes)", "type": "Ligne/Polygone"},
+                            {"id": "6.2", "name": "Rivière Secondaire", "description": "Couche retraçant les rivières secondaires du pays (Fleuve, rivières temporaires ou permanentes)", "type": "Ligne/Polygone"},
+                            {"id": "6.3", "name": "Rivière Tertiaire", "description": "Rivières de troisième ordre", "type": "Ligne"},
+                            {"id": "6.4", "name": "Rivière à écoulement permanent", "description": "Cours d&#39;eau permanent toute l&#39;année", "type": "Ligne/Polygone"},
+                            {"id": "6.5", "name": "Rivière à écoulement temporaire", "description": "Cours d&#39;eau temporaire selon la saison", "type": "Ligne"}
+                         ]'>
                         <h4><i class="fas fa-stream"></i> Réseau Hydrographique</h4>
                         <p>Rivières principales, secondaires et tertiaires</p>
                         <span class="data-type">Ligne/Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="7" 
+                         data-title="Toponymie"
+                         data-description="Décrit les lieux-dits du pays par type selon les caractéristiques des lieux"
+                         data-layers='[
+                            {"id": "7.1", "name": "Lieudit Principal", "description": "Lieux-dits principaux", "type": "Point"},
+                            {"id": "7.2", "name": "Lieudit Secondaire", "description": "Lieux-dits secondaires", "type": "Point"},
+                            {"id": "7.3", "name": "Lieudit Autre", "description": "Autres lieux-dits", "type": "Point"},
+                            {"id": "7.4", "name": "Quartier", "description": "Quartiers urbains", "type": "Point"},
+                            {"id": "7.5", "name": "Côtier", "description": "Points côtiers", "type": "Point"},
+                            {"id": "7.6", "name": "Relief Chaîne de montagne", "description": "Chaînes montagneuses", "type": "Point"},
+                            {"id": "7.7", "name": "Relief Morne", "description": "Mornes et collines", "type": "Point"}
+                         ]'>
                         <h4><i class="fas fa-map-pin"></i> Toponymie</h4>
                         <p>Lieux-dits, quartiers et points de relief</p>
                         <span class="data-type">Point</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="9" 
+                         data-title="Agglomération"
+                         data-description="Surface continue occupée principalement par des aires édifiées, pavées ou profondément altérées par l'homme pour l'habitation, le commerce, l'industrie, le transport, le loisir, les services publics, etc."
+                         data-layers='[
+                            {"id": "9.1", "name": "Tâche d&#39;agglomération principale", "description": "Zones urbaines principales", "type": "Polygone"},
+                            {"id": "9.2", "name": "Extension urbaine", "description": "Extensions des zones urbaines", "type": "Polygone"}
+                         ]'>
                         <h4><i class="fas fa-city"></i> Agglomération</h4>
                         <p>Zones urbaines et extensions urbaines</p>
                         <span class="data-type">Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="10" 
+                         data-title="Occupation des Sols (OCS)"
+                         data-description="Décrit de façon hiérarchique les différentes classes d'occupation du sol selon une nomenclature préalablement définie et adaptée à travers une image de base qui a été utilisée."
+                         data-layers='[
+                            {"id": "10.1", "name": "Occupation des sols de 1978", "description": "Issu de la photographie aérienne de 1956. Décrit d&#39;une manière peu détaillée le mode d&#39;occupation des sols (biota) en 1978", "type": "Polygone"},
+                            {"id": "10.2", "name": "Occupation des sols de 1998", "description": "Issu de l&#39;image spot de 1998 à 20m de résolution spatiale", "type": "Polygone"},
+                            {"id": "10.3", "name": "OCS du bassin versant du fleuve Artibonite", "description": "Photo-interprétée et classifiée à partir de l&#39;orthophoto de 2010", "type": "Polygone"},
+                            {"id": "10.9", "name": "OCS 2014", "description": "Réalisée sur l&#39;ensemble du pays à partir de l&#39;orthophoto de 2014", "type": "Polygone"},
+                            {"id": "10.10", "name": "OCS Sentinelle 2", "description": "Réalisée sur l&#39;ensemble du pays à partir de l&#39;image satellitaire Sentinelle 2 de 2019", "type": "Polygone"}
+                         ]'>
                         <h4><i class="fas fa-tree"></i> Occupation des Sols</h4>
                         <p>Classification hiérarchique de 1978 à 2019</p>
                         <span class="data-type">Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -779,35 +909,120 @@
                     <p>Analyses sectorielles spécialisées</p>
                 </div>
                 <div class="category-datasets">
-                    <div class="dataset-item">
+                    <div class="dataset-item" 
+                         data-id="14" 
+                         data-title="Agriculture"
+                         data-description="Ces couches décrivent les informations relatives à la réalité agricole: estimation des superficies emblavées (2009 à 2014), description de l'état de la végétation, présentation pilote relative à l'estimation de rendement (maïs, riz et haricot), etc."
+                         data-layers='[
+                            {"id": "14.1", "name": "Surfaces Agricoles Emblavées (2009 à 2014) par échantillonnage", "description": "Estimation des superficies cultivées", "type": "Point"},
+                            {"id": "14.2", "name": "Rendement et Production Végétale par échantillonnage", "description": "Données de rendement agricole", "type": "Point"},
+                            {"id": "14.4", "name": "Zone Agro-Sylvo-Écologique", "description": "Zonage agro-écologique", "type": "Polygone"},
+                            {"id": "14.5", "name": "Potentialité Agricole des Sols", "description": "Décrit l&#39;aptitude de chaque portion de terre à l&#39;agriculture, l&#39;élevage, l&#39;agro-foresterie", "type": "Polygone"},
+                            {"id": "14.6", "name": "Référentiel National d&#39;Observation par Point (RENOP)", "description": "Grille de points espacés à 125mx125m distribués sur l&#39;ensemble du pays", "type": "Point"}
+                         ]'>
                         <h4><i class="fas fa-seedling"></i> Agriculture</h4>
                         <p>Surfaces emblavées, rendements et potentialités agricoles</p>
                         <span class="data-type">Point/Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="15" 
+                         data-title="Environnement"
+                         data-description="Ces couches ne se concentrent que de fournir des informations nécessaires à la prise de décision relative à l'environnement haïtien. Ainsi, des données sur l'hydrogéologie, les ressources hydriques, les données climatiques archives et horaires, les aires protégées, etc."
+                         data-layers='[
+                            {"id": "15.1", "name": "Hydrogéologie", "description": "Caractérisation hydrogéologique", "type": "Polygone"},
+                            {"id": "15.2", "name": "Aires Protégées", "description": "Limite Aires protégées en 3 niveaux (Centrale, Tampon et Transition)", "type": "Polygone"},
+                            {"id": "15.3", "name": "Point d&#39;Eau (Source, Forage)", "description": "Localisation des points d&#39;eau", "type": "Point"},
+                            {"id": "15.4", "name": "Zone Humide", "description": "Identification et numérisation des zones humides (Mangroves, Marais, Marécages, Plan d&#39;eau)", "type": "Polygone"},
+                            {"id": "15.5", "name": "Stations agro-climatiques automatiques/manuelles", "description": "Localisation et caractéristiques de toutes les stations agro-climatiques installées", "type": "Point"}
+                         ]'>
                         <h4><i class="fas fa-leaf"></i> Environnement</h4>
                         <p>Hydrogéologie, aires protégées, stations climatiques</p>
                         <span class="data-type">Point/Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="16" 
+                         data-title="Socio-Économique"
+                         data-description="Décrit à partir d'enquêtes de terrain les caractéristiques socio-économiques des ménages échantillonnés."
+                         data-layers='[
+                            {"id": "16.1", "name": "Données Socio-Economique: Parc Citadelle, Parc historique La Visite, BV Grande-Rivière du Nord, etc.", "description": "Caractéristiques socio-économiques des ménages échantillonnés", "type": "Point"},
+                            {"id": "16.2", "name": "Tenure Foncière", "description": "Données sur la tenure foncière", "type": "Polygone"}
+                         ]'>
                         <h4><i class="fas fa-users"></i> Socio-Économique</h4>
                         <p>Caractéristiques des ménages et tenure foncière</p>
                         <span class="data-type">Point/Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="18" 
+                         data-title="Infrastructures et Services"
+                         data-description="Informe sur la localisation des infrastructures et des équipements qui n'ont pas la fonction résidentielle ou qui ont en même temps la fonction résidentielle et en même temps une autre fonction"
+                         data-layers='[
+                            {"id": "18.1", "name": "Localisation de Marchés", "description": "Marchés publics et privés", "type": "Point"},
+                            {"id": "18.2", "name": "Sites Remarquables", "description": "Grotte, chute d&#39;eau, monument historique, ruines, etc", "type": "Point"},
+                            {"id": "18.4", "name": "Bâtiments importants", "description": "Ecole, Eglise, Dispensaire, Hôpitaux, centre de santé, bâtiment gouvernemental", "type": "Point"},
+                            {"id": "18.6", "name": "Ouvrage d&#39;Art", "description": "Ponts, dalots, buses, murs, cassis construits à travers le pays", "type": "Point"},
+                            {"id": "18.8", "name": "Cimetière", "description": "Localisation des cimetières", "type": "Polygone"}
+                         ]'>
                         <h4><i class="fas fa-building"></i> Infrastructures</h4>
                         <p>Marchés, écoles, hôpitaux, ouvrages d'art</p>
                         <span class="data-type">Point/Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="21" 
+                         data-title="Aléas"
+                         data-description="Décrit la localisation des zones d'aléas par région et ou à l'échelle nationale par type et par niveau d'aléas"
+                         data-layers='[
+                            {"id": "21.1", "name": "Zone Propice à l&#39;Inondation", "description": "Zones à risque d&#39;inondation", "type": "Polygone"},
+                            {"id": "21.2", "name": "Risque d&#39;Erosion des Sols 1978", "description": "Décrit les différents niveaux de risques d&#39;érosion au niveau du territoire Haïtien", "type": "Polygone"},
+                            {"id": "21.4", "name": "Cartographie de l&#39;Aléa Inondation", "description": "Gonaïves, Cabaret, Léogane, Fonds Verettes, Cayes, Camp-Perrin, Cap-Haïtien, Ouanaminthe, etc.", "type": "Polygone"},
+                            {"id": "21.5", "name": "Déplacement de terrain", "description": "En milieu urbain par la méthode de permanent Scatter", "type": "Polygone"}
+                         ]'>
                         <h4><i class="fas fa-exclamation-triangle"></i> Aléas</h4>
                         <p>Zones d'inondation, risques d'érosion</p>
                         <span class="data-type">Polygone</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="23" 
+                         data-title="Altimétrie"
+                         data-description="Décrit les différentes altitudes de terrain et d'élévation du pays sous forme de grille, de courbe de niveau et de points"
+                         data-layers='[
+                            {"id": "23.1", "name": "Modèle Numérique de Terrain issu du projet SRTM", "description": "MNT sur tout le pays", "type": "Grille"},
+                            {"id": "23.2", "name": "Modèle Numérique de Terrain issu du levé LIDAR de 2014", "description": "MNT haute résolution", "type": "Grille/Point"},
+                            {"id": "23.3", "name": "Courbe de niveau", "description": "Issu du LIDAR, des cartes topographiques à l&#39;échelle 1/50,000", "type": "Ligne"},
+                            {"id": "23.5", "name": "Point coté", "description": "Points d&#39;altitude", "type": "Point"},
+                            {"id": "23.6", "name": "Courbe bathymétrique", "description": "Bathymétrie marine", "type": "Ligne"}
+                         ]'>
                         <h4><i class="fas fa-mountain"></i> Altimétrie</h4>
                         <p>Modèles numériques de terrain, courbes de niveau</p>
                         <span class="data-type">Grille/Ligne</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -822,20 +1037,59 @@
                     <p>Imagerie aérienne, satellitaire et cartes historiques</p>
                 </div>
                 <div class="category-datasets">
-                    <div class="dataset-item">
+                    <div class="dataset-item" 
+                         data-id="24" 
+                         data-title="Image Aérienne"
+                         data-description="Prise de vue par avion ou drone sur tout le pays ou spécifiquement sur certaines régions"
+                         data-layers='[
+                            {"id": "24.1", "name": "Image aérienne 1956, 1978, 2002, 2010, 2014", "description": "Photographies aériennes historiques et récentes", "type": "Image"}
+                         ]'>
                         <h4><i class="fas fa-plane"></i> Images Aériennes</h4>
                         <p>Orthophotographies de 1956 à 2014</p>
                         <span class="data-type">Raster</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="25" 
+                         data-title="Image Satellite"
+                         data-description="Prise de vue par satellite de télédétection sur tout le pays ou spécifiquement sur certaines régions"
+                         data-layers='[
+                            {"id": "25.1", "name": "Image satellite 1998, 2013", "description": "Images satellites SPOT", "type": "Image"},
+                            {"id": "25.4", "name": "Image World View de la ville de Pétion Ville", "description": "Image haute résolution", "type": "Image"},
+                            {"id": "25.5", "name": "Image MODIS Basse résolution", "description": "Images MODIS sur tout le pays", "type": "Image"},
+                            {"id": "25.6", "name": "Image Sentinelle 2", "description": "Images Sentinelle 2 sur l&#39;ensemble du pays", "type": "Image"}
+                         ]'>
                         <h4><i class="fas fa-satellite-dish"></i> Images Satellites</h4>
                         <p>SPOT, WorldView, MODIS, Sentinelle 2</p>
                         <span class="data-type">Raster</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
-                    <div class="dataset-item">
+                    
+                    <div class="dataset-item" 
+                         data-id="26" 
+                         data-title="Carte scannée"
+                         data-description="Carte sur support papier récupérée de différents projets ou différentes institutions qui ont été scannées à partir de scanner grand format (46 pouces) à grande résolution."
+                         data-layers='[
+                            {"id": "26.1", "name": "Feuille de carte topographique de 1978 à 1/50,000", "description": "Cartes topographiques scannées par feuille", "type": "Image"},
+                            {"id": "26.3", "name": "Hydrogéologie", "description": "Carte hydrogéologique nationale", "type": "Image"},
+                            {"id": "26.8", "name": "Géologie OEA", "description": "Carte géologique de l&#39;OEA (1968-1970)", "type": "Image"},
+                            {"id": "26.12", "name": "Répartition de la population", "description": "Carte de répartition de la population (OEA 1968-1970)", "type": "Image"},
+                            {"id": "26.13", "name": "Sols et vocation de la terre", "description": "Carte des sols et vocation (OEA 1968-1970)", "type": "Image"}
+                         ]'>
                         <h4><i class="fas fa-map"></i> Cartes Scannées</h4>
                         <p>Cartes topographiques et thématiques historiques</p>
                         <span class="data-type">Raster</span>
+                        <div class="dataset-action">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Cliquez pour voir les détails</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1157,7 +1411,7 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
+               <div class="container">
             <div class="contact-header">
                 <h2>Contactez-nous</h2>
                 <p class="contact-subtitle">Nous sommes là pour vous aider avec vos besoins en information géo-spatiale</p>
@@ -1360,6 +1614,38 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modale pour les détails des données -->
+    <div id="dataModal" class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3 id="modalTitle"></h3>
+                <button class="modal-close" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <div class="modal-section">
+                    <h4><i class="fas fa-info-circle"></i> Description Générale</h4>
+                    <p id="modalDescription"></p>
+                </div>
+                <div class="modal-section">
+                    <h4><i class="fas fa-layer-group"></i> Couches de Données</h4>
+                    <div id="modalLayers" class="layers-list"></div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" onclick="requestData()">
+                        <i class="fas fa-download"></i>
+                        Demander ces données
+                    </button>
+                    <button class="btn btn-secondary" onclick="closeDataModal()">
+                        <i class="fas fa-times"></i>
+                        Fermer
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
